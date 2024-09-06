@@ -1,0 +1,25 @@
+/* App.css */
+.micro-app2 {
+    background-color: #ffe4e1;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .micro-app2 .btn {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .micro-app2 .btn:hover {
+    background-color: #ff4500;
+  }
+  

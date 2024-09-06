@@ -1,0 +1,26 @@
+/* App.css */
+.host-app {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .host-app h1 {
+    color: #4CAF50;
+    font-size: 2em;
+  }
+  
+  .micro-apps {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .micro-apps > * {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
