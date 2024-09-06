@@ -101,7 +101,8 @@ function helloWorld() {
   console.log("Hello, world!");
 }
 </code>
-</pre>```
+</pre>
+```
 
 npm run build
 Running the Applications
