@@ -11,15 +11,47 @@ This repository contains a React microfrontend setup with one host application a
 - [Deployment](#deployment)
 - [License](#license)
 
-## Overview
 
 This project demonstrates how to configure a React microfrontend architecture with:
 - **Host Application**: The main application that loads microfrontends.
 - **Microfrontend 1**: A standalone microfrontend application.
 - **Microfrontend 2**: Another independent microfrontend application.
 
-## Prerequisites
+## Overview
+Architecture
+This project demonstrates a microfrontend architecture using React, where a single host application integrates multiple microfrontend applications. The architecture leverages Webpack 5's Module Federation to enable dynamic loading and integration of microfrontends.
 
+Host Application: Acts as the main container that dynamically loads and renders microfrontend applications. It manages the overall layout and navigation.
+Microfrontend 1: A standalone React application that provides a specific feature or component. It is exposed to the host application and can be independently developed and deployed.
+Microfrontend 2: Another independent React application that offers additional functionality or components. It is also integrated into the host application and operates independently of Microfrontend 1.
+Purpose
+The purpose of this setup is to illustrate how to modularize a large frontend application into smaller, self-contained microfrontends. This approach offers several benefits:
+
+Scalability: Allows teams to work on different parts of the application simultaneously without interfering with each other’s work.
+Flexibility: Enables independent deployment of microfrontends, facilitating easier updates and rollbacks.
+Reusability: Promotes reuse of components and features across different projects or parts of the application.
+Isolation: Ensures that issues or changes in one microfrontend do not impact the entire application, improving overall stability and maintainability.
+
+## Prerequisites
+Node.js and npm Versions
+Node.js: Version 14.x or higher
+npm: Version 6.x or higher
+These versions ensure compatibility with the dependencies and tools used in this project.
+
+Additional Tools and Software
+Webpack: Version 5.x
+Required for module bundling and integration of microfrontends using Webpack’s Module Federation.
+React: Version 18.x (or compatible)
+Core library used for building user interfaces.
+React DOM: Version 18.x (or compatible)
+Required for rendering React components in the browser.
+Webpack Dev Server: Version 4.x
+Provides a development server with live reloading capabilities.
+Module Federation Plugin: Required for integrating microfrontends.
+This is typically included with Webpack 5 and does not need separate installation.
+If you are using Yarn instead of npm, ensure you have:
+
+Yarn: Version 1.x or 2.x
 Ensure you have the following installed:
 - Node.js
 - npm (Node Package Manager)
