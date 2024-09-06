@@ -74,7 +74,7 @@ Install Dependencies
 
 For each application (host and microfrontends):
 
-- cd <application-folder>
+- cd application-folder
 - npm install
 
 Update Configuration
