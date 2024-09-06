@@ -58,6 +58,81 @@ Ensure you have the following installed:
 - Webpack 5
 
 ## Setup Instructions
+Environment Configuration
+Environment Variables
+
+Create a .env file in the root directory of each application (host-app, micro-app1, micro-app2) if you have any environment-specific variables.
+Example .env file:
+dotenv
+Copy code
+REACT_APP_API_URL=http://localhost:5000
+Configuration Files
+
+Ensure that your webpack.config.js files are correctly set up for each application. The configuration should include Module Federation settings to properly integrate microfrontends.
+Additional Setup Steps
+Clone the Repository
+
+bash
+Copy code
+git clone https://github.com/ninganagoud-vk/React-Micro-Frontend-.git
+cd React-Micro-Frontend-
+Install Dependencies
+
+For each application (host and microfrontends):
+
+bash
+Copy code
+cd <application-folder>
+npm install
+Update Configuration
+
+Host Application: Ensure that the webpack.config.js file in the host app includes the correct URLs for the remote microfrontends.
+Microfrontends: Verify that each microfrontend’s webpack.config.js file exposes the correct modules and is configured to run on different ports.
+Run Build Scripts (if applicable)
+
+If you have specific build scripts or pre-start commands, include them. For example:
+
+bash
+```html
+<button onclick="copyToClipboard('#code-block')">Copy code</button>
+<pre id="code-block">
+<code>
+function helloWorld() {
+  console.log("Hello, world!");
+}
+</code>
+</pre>
+npm run build
+Running the Applications
+Start the Host Application
+
+bash
+Copy code
+cd host-app
+npm start
+Start Microfrontend 1
+
+bash
+Copy code
+cd micro-app1
+npm start
+Start Microfrontend 2
+
+bash
+Copy code
+cd micro-app2
+npm start
+Additional Commands
+Linting: If you have linting configured, run:
+
+bash
+Copy code
+npm run lint
+Testing: If you have tests set up, run:
+
+bash
+Copy code
+npm test
 
 1. **Clone the Repository**
 
