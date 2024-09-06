@@ -72,18 +72,16 @@ Ensure that your webpack.config.js files are correctly set up for each applicati
 Additional Setup Steps
 Clone the Repository
 
-bash
-Copy code
 git clone https://github.com/ninganagoud-vk/React-Micro-Frontend-.git
 cd React-Micro-Frontend-
+
 Install Dependencies
 
 For each application (host and microfrontends):
 
-bash
-Copy code
 cd <application-folder>
 npm install
+
 Update Configuration
 
 Host Application: Ensure that the webpack.config.js file in the host app includes the correct URLs for the remote microfrontends.
@@ -92,52 +90,11 @@ Run Build Scripts (if applicable)
 
 If you have specific build scripts or pre-start commands, include them. For example:
 
-bash
-```html
-<button onclick="copyToClipboard('#code-block')">Copy code</button>
-<pre id="code-block">
-<code>
-function helloWorld() {
-  console.log("Hello, world!");
-}
-</code>
-</pre>
-```
-
+Run Build Scripts (if applicable)
 npm run build
-Running the Applications
-Start the Host Application
 
-bash
-Copy code
-cd host-app
+
+## Running the Applications 
+cd React-Micro-Frontend-
+npm install
 npm start
-Start Microfrontend 1
-
-bash
-Copy code
-cd micro-app1
-npm start
-Start Microfrontend 2
-
-bash
-Copy code
-cd micro-app2
-npm start
-Additional Commands
-Linting: If you have linting configured, run:
-
-bash
-Copy code
-npm run lint
-Testing: If you have tests set up, run:
-
-bash
-Copy code
-npm test
-
-1. **Clone the Repository**
-
-   ```bash
-   git clone <your-repo-url>
-   cd <repository-name>
