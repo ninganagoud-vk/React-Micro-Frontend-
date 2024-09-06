@@ -33,21 +33,18 @@ Reusability: Promotes reuse of components and features across different projects
 Isolation: Ensures that issues or changes in one microfrontend do not impact the entire application, improving overall stability and maintainability.
 
 ## Prerequisites
-Node.js and npm Versions
-Node.js: Version 14.x or higher
-npm: Version 6.x or higher
+- Node.js and npm Versions
+- Node.js: Version 14.x or higher
+- npm: Version 6.x or higher
 These versions ensure compatibility with the dependencies and tools used in this project.
 
 Additional Tools and Software
-Webpack: Version 5.x
-Required for module bundling and integration of microfrontends using Webpack’s Module Federation.
-React: Version 18.x (or compatible)
+- Webpack: Version 5.x Required for module bundling and integration of microfrontends using Webpack’s Module Federation.
+- React: Version 18.x (or compatible)
 Core library used for building user interfaces.
-React DOM: Version 18.x (or compatible)
-Required for rendering React components in the browser.
-Webpack Dev Server: Version 4.x
-Provides a development server with live reloading capabilities.
-Module Federation Plugin: Required for integrating microfrontends.
+- React DOM: Version 18.x (or compatible) Required for rendering React components in the browser.
+- Webpack Dev Server: Version 4.x Provides a development server with live reloading capabilities.
+- Module Federation Plugin: Required for integrating microfrontends.
 This is typically included with Webpack 5 and does not need separate installation.
 If you are using Yarn instead of npm, ensure you have:
 
@@ -64,23 +61,21 @@ Environment Variables
 Create a .env file in the root directory of each application (host-app, micro-app1, micro-app2) if you have any environment-specific variables.
 Example .env file:
 dotenv
-Copy code
-REACT_APP_API_URL=http://localhost:5000
-Configuration Files
+- REACT_APP_API_URL=http://localhost:5000
 
 Ensure that your webpack.config.js files are correctly set up for each application. The configuration should include Module Federation settings to properly integrate microfrontends.
 Additional Setup Steps
 Clone the Repository
 
-git clone https://github.com/ninganagoud-vk/React-Micro-Frontend-.git
-cd React-Micro-Frontend-
+- git clone https://github.com/ninganagoud-vk/React-Micro-Frontend-.git
+- cd React-Micro-Frontend-
 
 Install Dependencies
 
 For each application (host and microfrontends):
 
-cd <application-folder>
-npm install
+- cd <application-folder>
+- npm install
 
 Update Configuration
 
@@ -91,10 +86,10 @@ Run Build Scripts (if applicable)
 If you have specific build scripts or pre-start commands, include them. For example:
 
 Run Build Scripts (if applicable)
-npm run build
+- npm run build
 
 
 ## Running the Applications 
-cd React-Micro-Frontend-
-npm install
-npm start
+- cd React-Micro-Frontend-
+- npm install
+- npm start
